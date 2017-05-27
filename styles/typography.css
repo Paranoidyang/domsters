@@ -1,0 +1,55 @@
+body {
+  font-size: 76%;
+  font-family: "Helvetica","Arial",sans-serif;/*font-family 可以把多个字体名称作为一个“回退”
+  系统来保存。如果浏览器不支持第一个字体，则会尝试下一个。sans-serif专指西文中没有衬线的字体，是系统中一定存在的某种字
+  体，可以自己设置，加上这个后就可以保证调用。
+  */
+}
+body * {
+  font-size: 1em;
+}
+a {
+  font-weight: bold;
+  text-decoration: none;/*去掉下划线*/
+}
+header nav {
+  font-family: "Lucida Grande","Helvetica","Arial",sans-serif;
+}
+header nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+article {
+  line-height: 1.8em;
+}
+article p {
+  margin: 1em 0;
+}
+h1 {
+  font-family: "Georgia","Times New Roman",sans-serif;
+  font: 2.4em normal;
+}
+h2 {
+  font-family: "Georgia","Times New Roman",sans-serif;
+  font: 1.8em normal;
+  margin-top: 1em;
+}
+h3 {
+  font-family: "Georgia","Times New Roman",sans-serif;
+  font: 1.4em normal;
+  margin-top: 1em;
+}
+#imagegallery li {
+  list-style-type: none;/*去掉列表前面的格式，如小圆点
+}*/
+textarea {
+  font-family: "Helvetica","Arial",sans-serif;
+}
+
+dt {
+  margin-right: 1em;
+}
+dd {
+  margin-right: 3em;
+}
+

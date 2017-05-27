@@ -1,0 +1,137 @@
+section, header, article, nav {
+	display: block;/*此元素将显示为块级元素，此元素前后会带有换行符。如果不用display：block
+  定义一下，那么定义width、height等和长宽相关的css属性时会发现完全不生效*/
+}
+
+* {/*使用通配选择器*把所有元素的内外边距设置为零。这样就把不同浏览器为元素设置的不
+  同内外边距全都删除了。重设这些之后，所有样式就可以一视同仁了
+  */
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  margin: 1em 10%;/*上下外边距为1em,左右外边距为基于父元素的宽度10%的外边距。*/
+  background-image: url(../images/background.gif);
+  background-attachment: fixed;/*随着页面的滚动轴背景图片不会移动*/
+  background-position: top left;/*设置背景图片的起始位置*/
+  background-repeat: repeat-x;/*背景图像将在水平方向重复。*/
+  max-width: 80em;
+}
+header {
+  background-image: url(../images/guitarist.gif);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  border-width: .1em;/*点前面省略了个0*/
+  border-style: solid;/*边框实线*/
+  border-bottom-width: 0;
+}
+header nav {
+  background-image: url(../images/header navbar.gif);
+  background-position: bottom left;
+  background-repeat: repeat-x;
+  border-width: .1em;
+  border-style: solid;
+  border-bottom-width: 0;
+  border-top-width: 0;
+  padding-left: 10%;/*home到左边的距离*/
+}
+header nav ul {
+  width: 100%;
+  overflow: hidden;/*隐藏溢出，清除浮动。隐藏超出的部分，如果设置为scroll则带有滚动条*/
+  border-left-width: .1em;/*home最左边那一竖*/
+  border-left-style: solid;
+}
+header nav li {
+  display: inline;/*让列表项水平摆放*/
+}
+header nav li a {
+  display: block;
+  float: left;
+  padding: .5em 2em;
+  border-right: .1em solid;/*每个导航项的右边加一条竖线，起分隔作用*/
+}
+article {
+  border-width: .1em;
+  border-style: solid;
+  border-top-width: 0;
+  padding: 2em 10%;
+  line-height: 1.8em;
+}
+article img {
+  border-width: .1em;
+  border-style: solid;
+  outline-width: .1em;/*设置元素整个轮廓的宽度*/
+  outline-style: solid;
+}
+
+
+
+
+/*蓝色的是什么，为什么html中找不到对应的*/
+#about header {
+  background-image: url(../images/lineup.gif);
+}
+#photos header {
+  background-image: url(../images/basshead.gif);
+}
+#live header {
+  background-image: url(../images/bassist.gif);
+}
+#contact header {
+  background-image: url(../images/drummer.gif);
+}
+
+#slideshow {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+}
+#preview {
+  position: absolute;
+  border-width: 0;
+  outline-width: 0;
+}
+
+#frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  border-width: 0;
+  outline-width: 0;
+}
+
+
+#imagegallery li {
+  display: inline;
+}
+
+
+td {
+  padding: .5em 3em;
+}
+
+
+dl {
+  overflow: hidden;
+}
+dt {
+  float: left;
+}
+dd {
+  float: left;
+}
+
+
+label {
+  display: block;
+}
+fieldset {
+  border: 0;
+}
+
+
+

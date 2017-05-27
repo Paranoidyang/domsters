@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Jay Skript And The Domsters: Contact the band</title>
+  <script src="scripts/modernizr-1.6.min.js"></script>
+  <link rel="stylesheet" media="screen" href="styles/basic.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.gif" alt="Jay Skript and the Domsters" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="photos.html">Photos</a></li>
+        <li><a href="live.html">Live</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <article>
+<h1>Contact the band</h1>
+<form method="post" action="submit.html"><!-- <form> 标签用于为用户输入创建 HTML 表单。表单用于向服务器传输数据。method规定如何发送表单数据。action规定当提交表单时，向何处发送表单数据。 -->
+  <fieldset><!-- <fieldset> 标签将表单内容的一部分打包，生成一组相关表单的字段。当一组表单元素放到 <fieldset> 标签内时，浏览器会以特殊方式来显示它们，它们可能有特殊的边界、3D 效果，或者甚至可创建一个子表单来处理这些元素。 -->
+    <p>
+     <label for="name">Name:</label><!-- for规定 label绑定到哪个表单元素。对应着input的id属性。单label 只是展示，鼠标左键点击 label 中的文字的时候没有任何效果，如果添加了for属性，当你点击 label 中的文字的时候，光标会定位到for属性相应的id标签中 -->
+     <input type="text" id="name" name="name" placeholder="Your name" required="required" /><!-- 根据不同的 type 属性值，输入字段拥有很多种形式。name 属性规定 input 元素的名称。name 属性用于对提交到服务器后的表单数据进行标识，或者在客户端通过 JavaScript 引用表单数据。只有设置了 name 属性的表单元素才能在提交表单时传递它们的值。placeholder是提示文字，并会在字段获得焦点时消失。。required属性规定必需在提交之前填写输入字段。 -->
+    </p>
+    <p>
+     <label for="email">Email:</label>
+     <input type="email" id="email" name="email" placeholder="Your email address" required="required" />
+    </p>
+    <p>
+     <label for="message">Message:</label>
+     <textarea cols="45" rows="7" id="message" name="message" required="required" placeholder="Write your message here."></textarea>
+    </p>
+    <input type="submit" value="Send" />
+   </fieldset>
+</form>
+  </article>
+  <script src="scripts/global.js"></script>
+</body>
+</html>
